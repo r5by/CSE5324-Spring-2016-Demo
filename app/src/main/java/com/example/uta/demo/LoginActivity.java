@@ -73,10 +73,8 @@ public class LoginActivity extends Activity {
             }
 
             String[] credentials = DUMMY_CREDENTIALS.split(":");
-            if (credentials[0].equals(emailStr) && credentials[1].equals(passwordStr))
-                return true;
-            else
-                return false;
+
+            return (credentials[0].equals(emailStr) && credentials[1].equals(passwordStr));
         }
 
         @Override
